@@ -1,4 +1,6 @@
-main: planecard.pdf
+main: default-planecard.pdf
 
-%.pdf: %.asy
+%.pdf: %.asy FORCE
 	asy -tex xelatex "$<"
+
+FORCE:
