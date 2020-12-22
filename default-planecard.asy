@@ -25,7 +25,7 @@ void inside_instructions(pair bottom_point) {
         minipage("\textbf{How to fold the ``Boom''}\par
         \emph{Designed by Alex Duan, Dec.~6, 2020}\par
         \begin{itemize}
-        \item Fold along the 8 lines shown. Dashed lines are valley folds;
+        \item Fold along the 9 lines shown. Dashed lines are valley folds;
         dot-dashed are mountain folds.
         \item Hold near the front of the plane and throw gently.
         \item This plane flies pretty wild (like 2020), but if it dives or

@@ -23,7 +23,7 @@ draw(
     align=SE)
 );
 
-draw((0, h/2) -- (w, h/2), p=mountain, L=Label("4 (this side up)",
+draw((0, h/2) -- (w, h/2), p=mountain, L=Label("5 (this side up)",
         position=Relative(0.75)));
 
 draw((h/2, h/2 - fuselage) -- (w, h/2 - fuselage), p=valley,
@@ -31,9 +31,9 @@ draw((h/2, h/2 - fuselage) -- (w, h/2 - fuselage), p=valley,
 draw((h/2, h/2 + fuselage) -- (w, h/2 + fuselage), p=valley,
         L=Label("6 (wing)"));
 
-draw((h/2, winglet) -- (w, winglet), p=mountain, L=Label("7"), align=N);
+draw((h/2, winglet) -- (w, winglet), p=mountain, L=Label("8"), align=N);
 draw((h/2, h - winglet) -- (w, h - winglet), p=mountain,
-        L=Label("8"));
+        L=Label("9 (nine)"));
 
 
 //
@@ -90,17 +90,17 @@ label(rotate(180) *
     Label(""),
     (w - h/8, 3h/4 - margin), align=S);
 
-draw((w - h/8, 3h/8) -- (w, 3h/8), p=valley, L=Label("2 (fold point"));
+draw((w - h/8, 3h/8) -- (w, 3h/8), p=valley, L=Label("3 (fold point"));
 draw((w - h/8, 5h/8) -- (w, 5h/8), p=valley,
-        L=rotate(180) * Label("to line 3)", align=N));
+        L=rotate(180) * Label("to line 4)", align=N));
 
-draw((w - h/4, h/4) -- (w, h/4), p=valley, L=Label("3"));
+draw((w - h/4, h/4) -- (w, h/4), p=valley, L=Label("4"));
 draw((w - h/4, 3h/4) -- (w, 3h/4), p=valley);
 
 draw((w - h/4, h/2 - fuselage) -- (w - h/8, h/2 - fuselage), p=valley,
-        L=Label("5"));
-draw((w - h/4, h/2 + fuselage) -- (w - h/8, h/2 + fuselage), p=valley,
         L=Label("6"));
+draw((w - h/4, h/2 + fuselage) -- (w - h/8, h/2 + fuselage), p=valley,
+        L=Label("7"));
 
 clip(box((0, 0), (w, h)));
 fixedscaling((0, 0), (w, h));
